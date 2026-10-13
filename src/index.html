@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3 - Landing Page</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-black text-white antialiased">
+  <header class="absolute inset-x-0 top-0 z-50">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-5 md:px-8 lg:py-6">
+      <a href="#home" class="text-2xl font-bold tracking-tight">Tech.</a>
+
+      <div class="hidden items-center gap-10 text-[16px] font-medium text-white/80 md:flex">
+        <a class="transition hover:text-yellow-200" href="#about">About</a>
+        <a class="transition hover:text-white" href="#services">Service</a>
+        <a class="transition hover:text-white" href="#work">Our Work</a>
+        <a class="transition hover:text-white" href="#team">Team</a>
+      </div>
+
+      <a href="#contact" class="hidden rounded-full bg-violet-700 px-7 py-2 text-[14px] font-semibold transition hover:bg-violet-600 md:inline-flex">Contact Us</a>
+
+      <button id="menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" class="inline-flex rounded-md p-2 text-white transition hover:bg-white/10 md:hidden">
+        <svg id="menu-icon" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </nav>
+
+    <div id="mobile-menu" class="mx-5 hidden rounded-xl border border-white/10 bg-black/95 p-4 shadow-2xl backdrop-blur-md md:hidden">
+      <div class="flex flex-col gap-1 text-sm font-medium text-white/80">
+        <a class="rounded-lg px-3 py-3 transition hover:bg-white/10 hover:text-white" href="#about">About</a>
+        <a class="rounded-lg px-3 py-3 transition hover:bg-white/10 hover:text-white" href="#services">Service</a>
+        <a class="rounded-lg px-3 py-3 transition hover:bg-white/10 hover:text-white" href="#work">Our Work</a>
+        <a class="rounded-lg px-3 py-3 transition hover:bg-white/10 hover:text-white" href="#team">Team</a>
+        <a class="mt-2 rounded-full bg-violet-700 px-4 py-3 text-center text-xs font-semibold text-white transition hover:bg-violet-600" href="#contact">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="relative min-h-[620px] overflow-hidden bg-[radial-gradient(circle_at_60%_70%,#120027_0%,#06000d_42%,#000_78%)] pt-28 md:min-h-[690px] md:pt-36 lg:min-h-[720px]">
+      <div class="mx-auto grid max-w-6xl items-center px-5 md:grid-cols-2 md:px-8">
+        <div class="relative z-10 max-w-xl pb-8 md:pb-24">
+          <h1 class="text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-5xl">Build with the <em class="font-semibold">Future.</em></h1>
+          <p class="mt-5 max-w-lg text-sm leading-6 text-white/45 md:text-[17px]">From building sleek websites and mobile apps to integrating AI solutions, we help brands turn ideas into powerful digital experiences that connect, engage, and scale.</p>
+          <a href="#contact" class="mt-7 inline-flex w-full md:w-40 items-center justify-center rounded-full bg-violet-700 px-6 py-3 text-xs font-semibold transition hover:bg-violet-600">Let’s Talk</a>
+        </div>
+
+        <div class="relative flex h-[400px] items-end justify-center md:h-[500px] md:justify-end">
+          <img src="../assets/images/hand.png" alt="Hand holding a smartphone" class="absolute bottom-[-0px] right-[-0px] w-[350px] max-w-none md:bottom-[-135px] md:right-[-0px] md:w-[600px]" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="px-5 py-20 md:py-24">
+      <div class="mx-auto max-w-5xl text-center">
+        <h2 class="text-2xl font-bold md:text-4xl">Who We Are</h2>
+        <p class=" mx-auto mt-6 max-w-4xl text-sm leading-6 text-white/50 md:text-2xl md:leading-8">We're a group of tech students trained in <strong class="text-white">building real-world digital products.</strong><br class="hidden md:block"> From coding to design, we <strong class="text-white">craft modern solutions for modern problems.</strong></p>
+      </div>
+    </section>
+
+    <section id="services" class="px-5 py-16 md:py-20">
+      <div class="mx-auto max-w-5xl">
+        <div class="text-center">
+          <h2 class="text-2xl font-bold md:text-4xl">What We Do</h2>
+          <p class="mt-4 text-lg text-white/40">We offer simple tech solutions to help your ideas grow.</p>
+        </div>
+
+        <div class="mt-10 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4">
+          <article class="rounded-lg border border-white/10 p-5 text-center transition hover:border-violet-700/70 hover:bg-white/[0.02]">
+            <div class="mx-auto flex h-10 w-18 items-center justify-center text-violet-600">
+              <img src="../assets/images/website.png" alt="Web Development Icon" class="h-10 w-12" />
+            </div>
+            <h3 class="mt-4 text-xs font-bold md:text-lg">Web Development</h3>
+            <p class="mt-2 text-[14px] leading-4 text-white/40">Modern websites using HTML, CSS, JavaScript, and frameworks.</p>
+          </article>
+          <article class="rounded-lg border border-white/10 p-5 text-center transition hover:border-violet-700/70 hover:bg-white/[0.02]">
+            <div class="mx-auto flex h-10 w-18 items-center justify-center text-violet-600">
+              <img src="../assets/images/mobil.png" alt="App Development Icon" class="h-10 w-12" />
+            </div>
+            <h3 class="mt-4 text-xs font-bold md:text-sm">App Development</h3>
+            <p class="mt-2 text-[10px] leading-4 text-white/40">Mobile and desktop apps tailored for your needs.</p>
+          </article>
+          <article class="rounded-lg border border-white/10 p-5 text-center transition hover:border-violet-700/70 hover:bg-white/[0.02]">
+            <div class="mx-auto flex h-10 w-18 items-center justify-center text-violet-600">
+              <img src="../assets/images/ai.png" alt="AI Integration Icon" class="h-10 w-12" />
+            </div>
+            <h3 class="mt-4 text-xs font-bold md:text-sm">AI Integration</h3>
+            <p class="mt-2 text-[14px] leading-4 text-white/40">Smart solutions using AI-powered tools and automation.</p>
+          </article>
+          <article class="rounded-lg border border-white/10 p-5 text-center transition hover:border-violet-700/70 hover:bg-white/[0.02]">
+            <div class="mx-auto flex h-10 w-18 items-center justify-center text-violet-600">
+              <img src="../assets/images/paint.png" alt="UI/UX Design Icon" class="h-10 w-12" />
+            </div>
+            <h3 class="mt-4 text-xs font-bold md:text-sm">UI/UX Design</h3>
+            <p class="mt-2 text-[14px] leading-4 text-white/40">Clean and functional designs for better user experience.</p>
+          </article>
+          <article class="rounded-lg border border-white/10 p-5 text-center transition hover:border-violet-700/70 hover:bg-white/[0.02]">
+            <div class="mx-auto flex h-10 w-18 items-center justify-center text-violet-600">
+              <img src="../assets/images/landingPage.png" alt="Landing Page Design Icon" class="h-10 w-12" />
+            </div>
+            <h3 class="mt-4 text-xs font-bold md:text-sm">Landing Page Design</h3>
+            <p class="mt-2 text-[14px] leading-4 text-white/40">High-converting landing pages for your product or business.</p>
+          </article>
+          <article class="rounded-lg border border-white/10 p-5 text-center transition hover:border-violet-700/70 hover:bg-white/[0.02]">
+            <div class="mx-auto flex h-10 w-18 items-center justify-center text-violet-600">
+              <img src="../assets/images/cms.png" alt="CMS Integration Icon" class="h-10 w-12" />
+            </div>
+            <h3 class="mt-4 text-xs font-bold md:text-sm">CMS Integration</h3>
+            <p class="mt-2 text-[14px] leading-4 text-white/40">Easy-to-manage websites with WordPress or Webflow.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="px-5 py-20 md:py-24">
+      <div class="mx-auto max-w-5xl">
+        <div class="text-center">
+          <h2 class="text-2xl font-bold md:text-4xl">Our Work</h2>
+          <p class="mt-4 text-lg text-white/40">See what we've built with passion and purpose</p>
+        </div>
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <a href="#contact" class="group"><img src="../assets/images/project.png" alt="Portfolio 1" class="aspect-[4/3] w-full rounded-xl object-cover transition duration-300 group-hover:-translate-y-1" /><p class="mt-3 text-lg font-bold">Portofolio 1</p></a>
+          <a href="#contact" class="group"><img src="../assets/images/creative.png" alt="Portfolio 2" class="aspect-[4/3] w-full rounded-xl object-cover transition duration-300 group-hover:-translate-y-1" /><p class="mt-3 text-lg font-bold">Portofolio 2</p></a>
+          <a href="#contact" class="group"><img src="../assets/images/showcase.png" alt="Portfolio 3" class="aspect-[4/3] w-full rounded-xl object-cover transition duration-300 group-hover:-translate-y-1" /><p class="mt-3 text-lg font-bold">Portofolio 3</p></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="px-5 py-20 md:py-24">
+      <div class="mx-auto max-w-5xl text-center">
+        <h2 class="text-2xl font-bold md:text-4xl">Meet the Team</h2>
+        <p class="mt-4 text-lg text-white/40">A group of future-ready tech makers.</p>
+        <div class="mt-10 grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-6">
+          <article><img src="../assets/images/jesper.png" alt="Jasper Kim" class="mx-auto aspect-square w-28 rounded-full object-cover md:w-40" /><h3 class="mt-4 text-lg font-bold">Jasper Kim</h3><p class="mt-2 text-[14px] text-white/40">Project Manager</p></article>
+          <article><img src="../assets/images/alex.png" alt="Alex Jonathan" class="mx-auto aspect-square w-28 rounded-full object-cover md:w-40" /><h3 class="mt-4 text-lg font-bold">Alex Jonathan</h3><p class="mt-2 text-[14px] text-white/40">Full-stack Developer</p></article>
+          <article><img src="../assets/images/mario.png" alt="Mario Lopez" class="mx-auto aspect-square w-28 rounded-full object-cover md:w-40" /><h3 class="mt-4 text-lg font-bold">Mario Lopez</h3><p class="mt-2 text-[14px] text-white/40">UI/UX Designer</p></article>
+          <article><img src="../assets/images/jesperk.png" alt="Jasper Kim" class="mx-auto aspect-square w-28 rounded-full object-cover md:w-40" /><h3 class="mt-4 text-lg font-bold">Jasper Kim</h3><p class="mt-2 text-[14px] text-white/40">Data Scientist</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="px-5 py-20 md:py-24">
+      <div class="mx-auto max-w-2xl">
+        <div class="text-center">
+          <h2 class="text-2xl font-bold md:text-3xl">Let’s Collaborate</h2>
+          <p class="mt-4 text-xs text-white/40">Need a tech team? We're ready to help</p>
+        </div>
+        <form class="mt-10 space-y-5" action="#" method="post">
+          <label class="block text-[13px] font-bold">Name<input type="text" name="name" placeholder="Enter your name" class="mt-2 block w-full rounded-md border border-white/15 bg-transparent px-3 py-3 text-sm font-normal outline-none placeholder:text-white/25 focus:border-violet-600" /></label>
+          <label class="block text-[13px] font-bold">Email<input type="email" name="email" placeholder="Enter your email" class="mt-2 block w-full rounded-md border border-white/15 bg-transparent px-3 py-3 text-sm font-normal outline-none placeholder:text-white/25 focus:border-violet-600" /></label>
+          <label class="block text-[13px] font-bold">Message<textarea name="message" rows="5" placeholder="Enter your message" class="mt-2 block w-full resize-none rounded-md border border-white/15 bg-transparent px-3 py-3 text-sm font-normal outline-none placeholder:text-white/25 focus:border-violet-600"></textarea></label>
+          <button type="submit" class="w-full rounded-full bg-violet-700 px-6 py-3 text-sm font-semibold transition hover:bg-violet-600">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 px-5 py-6 text-center text-[13px] text-white/40">
+    © 2025 Web Programming Hacks. All rights reserved.
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    const closeMenu = () => {
+      mobileMenu.classList.add('hidden');
+      menuButton.setAttribute('aria-expanded', 'false');
+      menuButton.setAttribute('aria-label', 'Open menu');
+      menuIcon.innerHTML = '<path d="M4 7h16M4 12h16M4 17h16"/>';
+    };
+
+    const toggleMenu = () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      if (isOpen) {
+        closeMenu();
+        return;
+      }
+
+      mobileMenu.classList.remove('hidden');
+      menuButton.setAttribute('aria-expanded', 'true');
+      menuButton.setAttribute('aria-label', 'Close menu');
+      menuIcon.innerHTML = '<path d="M6 6l12 12M18 6L6 18"/>';
+    };
+
+    menuButton.addEventListener('click', toggleMenu);
+    mobileMenu.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') closeMenu();
+    });
+  </script>
+</body>
+</html>
